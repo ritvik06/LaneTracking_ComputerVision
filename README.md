@@ -81,8 +81,6 @@ All straight lines going through a given point will correspond to a sinusoidal c
 
 ![Hough and Cartesian Spaces](./docs/chosen_images_grayscale_vs_blur.png)
 
-More information about the implementation of Hough Transform in OpenCV can be found [here](http://docs.opencv.org/trunk/d6/d10/tutorial_py_houghlines.html)
-
 The Hough transform returns lines, and the below images show what they look like:
 
 ![Images with Hough Lines](./docs/chosen_images_hough_lines.png)
@@ -100,13 +98,6 @@ In the below images, we color identified lines belonging to the left lane in red
 
 ![Images with Separated Lanes](./docs/chosen_images_lanes_separated.png )
 
-# Gradient Interpolation and Line Extrapolation
-
-To trace a full line from the bottom of the screen to the highest point of our region of interest, we must be able to interpolate the different points returned by our Hough transform function, and find a line that minimizes the distance across those points. Basically this is a [linear regression](https://en.wikipedia.org/wiki/Regression_analysis) problem. We will attempt to find the line on a given lane by minimizing the [least squares](https://en.wikipedia.org/wiki/Least_squares) error. We conveniently use the `scipy.stats.linregress(x, y)` function to find the slope and intercept of our lane line.
-
-We succeed in doing so, as attested by the following images below:
-
-![Images With Full Lane Lines](./docs/chosen_images_full_lane_lines.png )
 
 # Videos
 
