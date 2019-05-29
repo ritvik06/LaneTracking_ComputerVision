@@ -11,7 +11,6 @@ Sample images of 960 x 540 pixels. Below are two of the provided images.
 
 # The Pipeline
 
-In this part, we will cover in detail the different steps needed to create our pipeline, which will enable us to identify and classify lane lines. The pipeline itself will look as follows:
 * Convert original image to HSL
 * Isolate yellow and white from HSL image
 * Combine isolated HSL with original image
@@ -115,11 +114,3 @@ The initial implementation worked passably on the first two videos but utterly f
 ## Lane Detector Memory Of Previous Frames
 
 [![Lane Detection using computer vision](./docs/Lane_Detection_Yellow_White_Lanes.png)](https://youtu.be/TkiqQkBDY3Y)
-
-# Shortcomings
-
-I have observed some problems with the current pipeline:
-* in the challenge video at around second 5 the lane is covered by some shadow and I believe my code fails to detect it. I managed to fix this issue by applying the HSL color filtering as another pre-processing step.
-* straight lines do not work when there are curves on the road
-* Hough Transform is tricky to get right with its parameters. I am not sure I got the best settings
-
