@@ -113,4 +113,3 @@ The initial implementation worked passably on the first two videos but utterly f
 
 ## Lane Detector Memory Of Previous Frames
 
-[![Lane Detection using computer vision](./docs/Lane_Detection_Yellow_White_Lanes.png)](https://youtu.be/TkiqQkBDY3Y)
