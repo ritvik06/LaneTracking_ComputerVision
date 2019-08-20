@@ -111,5 +111,3 @@ Three videos were also provided to run our pipeline against them:
 
 The initial implementation worked passably on the first two videos but utterly failed on the challenge exercise. To make the line detection smoother and take advantage in the sequencing and locality of each frame (and therefore lines), I decided to interpolate lane gradients and intercepts _across frames_, and discard any line that deviated too much from the computed mean from previous frames.
 
-## Lane Detector Memory Of Previous Frames
-
